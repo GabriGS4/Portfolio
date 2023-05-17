@@ -7,6 +7,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { CountriesComponent } from './countries/countries.component';
 import { HelpYouComponent } from './help-you/help-you.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { OfertasComponent } from './ofertas/ofertas.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +19,14 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AboutUsComponent,
     CountriesComponent,
     HelpYouComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NavbarComponent,
+    OfertasComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

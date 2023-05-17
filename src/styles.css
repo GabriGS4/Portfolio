@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap'); */
+
+@font-face {
+    font-family: 'FuentePrincipal';
+    src: url('./assets/fonts/Alata-Regular.ttf');
+}
+* {
+    font-family: 'FuentePrincipal', sans-serif;
+}
+
+html,body {
+        height: 100%;
+    width: 100%;
+    background-image: url(./assets/fondo.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
