@@ -1,9 +1,9 @@
-<h1 class="text-center text-sky-300 text-6xl p-10 mt-20 font-extrabold">PAÍSES</h1>
-<h3 class="text-center text-gray-600 p-7 mt-32 text-lg md:text-2xl font-bold">CONTEMPLA OTRAS OPCIONES</h3>
-<h1 class="text-center text-sky-300  text-lg md:text-2xl font-bold">DISFRUTA DE TU EXPERIENCIA EN OTROS PAÍSES DE EUROPA
+<h1 class="text-center text-sky-300 text-6xl p-10 mt-24 font-extrabold">PAÍSES</h1>
+<h3 class="text-center text-gray-600 p-7 mt-56 text-lg md:text-2xl font-bold">CONTEMPLA OTRAS OPCIONES</h3>
+<h1 class="text-center text-sky-300 m-3 text-lg md:text-2xl font-bold">DISFRUTA DE TU EXPERIENCIA EN OTROS PAÍSES DE EUROPA
 </h1>
 <div class="flex flex-col md:flex-row justify-center align-middle items-center gap-10 m-10">
-    <div class="relative h-44 w-80 cursor-pointer">
+    <div class="relative h-44 w-80 cursor-pointer" (click)="paisesBajos()">
         <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
             style="background-image: url('../../assets/holandaPaisaje.jpg');"></div>
         <div
@@ -11,7 +11,7 @@
             <span class="text-white font-bold text-4xl">PAÍSES BAJOS</span>
         </div>
     </div>
-    <div class="relative h-44 w-80 cursor-pointer">
+    <div class="relative h-44 w-80 cursor-pointer" (click)="austria()">
         <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
             style="background-image: url('../../assets/austriaPaisaje.jpg');"></div>
         <div
@@ -19,7 +19,7 @@
             <span class="text-white font-bold text-4xl">AUSTRIA</span>
         </div>
     </div>
-    <div class="relative h-44 w-80 cursor-pointer">
+    <div class="relative h-44 w-80 cursor-pointer" (click)="suiza()">
         <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
             style="background-image: url('../../assets/suizaPaisaje.jpg');"></div>
         <div
@@ -28,4 +28,13 @@
         </div>
     </div>
 
+</div>
+<div class="bg-no-repeat bg-center bg-cover bg-fixed w-full p-3 md:p-20 backdrop-blur-0" style="background-image: url('../../assets/imgcountries.jpg');">
+  <div class="text-center p-5 m-10 bg-white rounded-lg ">Trabajar en el extranjero es una experiencia única que ofrece múltiples ventajas y beneficios.
+    Descubrir nuevas culturas, aprender idiomas y ampliar tus horizontes profesionales son solo algunos de los atractivos que esta aventura te puede proporcionar.
+    Además, trabajar en el extranjero te permite desarrollar habilidades interculturales y adaptarte a diferentes entornos laborales, lo que sin duda aumentará
+    tu valor en el mercado laboral. También tendrás la oportunidad de hacer conexiones internacionales y ampliar tu red de contactos. Y no olvidemos los beneficios
+    financieros, ya que trabajar en ciertos países puede ofrecer salarios más altos y mejores condiciones laborales. ¡Atrévete a explorar el mundo laboral y
+    descubre todas las oportunidades que te esperan en el extranjero!
+  </div>
 </div>
