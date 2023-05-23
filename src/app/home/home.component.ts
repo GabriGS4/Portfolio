@@ -8,7 +8,4 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   logo = '../assets/logoBlanco.png'
   fondo = '../assets/fondo.jpg'
-  holanda = '../assets/holanda.jpg'
-  austria = '../assets/austria.png'
-  suiza = '../assets/suiza.png'
 }
