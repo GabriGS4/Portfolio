@@ -17,7 +17,7 @@ export class CountriesComponent {
     Swal.fire({
       title: 'PAÍSES BAJOS',
       width:1400,
-      html:'<div class="flex flex-row justify-center items-center align-middle">' +
+      html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
         '<img class="rounded-lg" src="../../assets/holandaPaisaje2.jpg" height="900" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
             '<p class="text-left">Los Países Bajos son atractivos para aquellos que buscan vivir y trabajar en un entorno de alta calidad de vida y equilibrio entre el trabajo y la vida personal. Con una economía estable y próspera, el país ofrece numerosas oportunidades laborales y facilidades fiscales para migrantes cualificados y empresarios. Además, su tamaño compacto facilita la exploración de este nuevo hogar, mientras que su destacado sistema educativo beneficia tanto a los residentes como a los extranjeros, muchos de los cuales hablan inglés con fluidez, facilitando la comunicación y la integración.\n</p>' +
@@ -40,7 +40,7 @@ export class CountriesComponent {
     Swal.fire({
       title: 'AUSTRIA',
       width:1400,
-      html:'<div class="flex flex-row justify-center items-center align-middle">' +
+      html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
         '<img class="rounded-lg" src="../../assets/austriaPaisaje2.jpg" height="800" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
             '<p class="text-left">La hostelería austriaca es una industria próspera y emocionante que ofrece una amplia gama de motivos convincentes para vivir y trabajar en ella. Al trabajar en este sector, los empleados tienen la oportunidad de sumergirse en la rica cultura local y colaborar con personas de todo el mundo, lo que fomenta la diversidad y el intercambio cultural.\n</p>' +
@@ -63,7 +63,7 @@ export class CountriesComponent {
     Swal.fire({
       title: 'SUIZA',
       width:1200,
-      html:'<div class="flex flex-row justify-center items-center align-middle">' +
+      html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
         '<img class="rounded-lg" src="../../assets/suizaPaisaje2.jpg" height="600" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
             '<p class="text-left">Existen múltiples razones por las que alguien podría contemplar la idea de trasladarse a Suiza para vivir y trabajar. El país helvético es reconocido por su elevado nivel de vida y se ubica consistentemente entre los lugares más atractivos del mundo para establecerse.</p>' +

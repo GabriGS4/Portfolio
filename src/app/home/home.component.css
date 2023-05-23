@@ -1,10 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
-#itulo {
+#titulo {
     font-family: 'Mulish', sans-serif;
 }
 
 #subtitulo {
     font-family: 'Mulish', sans-serif;
+}
+
+#header-home {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+
+#header-home div {
+    position: relative;
+    z-index: 1;
+}
+
+#header-home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 80vh;
+    background-color: #008dff;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(4);
 }
