@@ -11,11 +11,8 @@
     font-family: 'FuentePrincipal', sans-serif;
 }
 
-/* html,body {
-        height: 100%;
+ html,body {
+   height: 100%;
     width: 100%;
-    background-image: url(./assets/fondo.jpg);
-    background-size: cover;
-    background-attachment: fixed; 
-    background-repeat: no-repeat;
-} */
+
+}

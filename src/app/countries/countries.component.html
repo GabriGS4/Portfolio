@@ -1,40 +1,121 @@
-<h1 class="text-center text-sky-300 text-6xl p-10 mt-24 font-extrabold">PAÍSES</h1>
-<h3 class="text-center text-gray-600 p-7 mt-56 text-lg md:text-2xl font-bold">CONTEMPLA OTRAS OPCIONES</h3>
-<h1 class="text-center text-sky-300 m-3 text-lg md:text-2xl font-bold">DISFRUTA DE TU EXPERIENCIA EN OTROS PAÍSES DE EUROPA
-</h1>
-<div class="flex flex-col md:flex-row justify-center align-middle items-center gap-10 m-10">
+<div class="w-full h-full">
+<!--  <div id="header-countries">
+    <div>
+      <h1 class="text-center text-white text-6xl p-10 mt-24 font-extrabold">PAÍSES</h1>
+      <h3 class="text-center text-gray-700 p-7 mt-24 text-lg md:text-2xl font-bold">CONTEMPLA OTRAS OPCIONES</h3>
+      <h1 class="text-center text-white m-3 text-lg md:text-2xl font-bold">DISFRUTA DE TU EXPERIENCIA EN OTROS PAÍSES DE EUROPA</h1>
+    </div>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden md:h-96 ">
+
+      <!-- Item 1 -->
+      <div class="hidden duration-500 ease-in-out " data-carousel-item>
+        <img src="../../assets/imgHeaderCountries.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <img src="../../assets/imgHeaderCountries2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <img src="../../assets/imgHeaderCountries3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <img src="../../assets/imgHeaderCountries4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <img src="../../assets/imgHeaderCountries5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+      <div class="hidden duration-500 ease-in-out" data-carousel-item>
+        <img src="../../assets/imgHeaderCountries6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <div class="absolute inset-0 flex items-center justify-center text-white text-3xl font-bold bg-black bg-opacity-60">Text Example 1</div>
+      </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="flex flex-col md:flex-row justify-center align-middle items-center gap-10 m-10">
     <div class="relative h-44 w-80 cursor-pointer" (click)="paisesBajos()">
-        <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
-            style="background-image: url('../../assets/holandaPaisaje.jpg');"></div>
-        <div
-            class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
-            <span class="text-white font-bold text-4xl">PAÍSES BAJOS</span>
-        </div>
+      <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
+           style="background-image: url('../../assets/holandaPaisaje.jpg');"></div>
+      <div
+        class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
+        <span class="text-white font-bold text-4xl">PAÍSES BAJOS</span>
+      </div>
     </div>
     <div class="relative h-44 w-80 cursor-pointer" (click)="austria()">
-        <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
-            style="background-image: url('../../assets/austriaPaisaje.jpg');"></div>
-        <div
-            class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
-            <span class="text-white font-bold text-4xl">AUSTRIA</span>
-        </div>
+      <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
+           style="background-image: url('../../assets/austriaPaisaje.jpg');"></div>
+      <div
+        class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
+        <span class="text-white font-bold text-4xl">AUSTRIA</span>
+      </div>
     </div>
     <div class="relative h-44 w-80 cursor-pointer" (click)="suiza()">
-        <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
-            style="background-image: url('../../assets/suizaPaisaje.jpg');"></div>
-        <div
-            class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
-            <span class="text-white font-bold text-4xl">SUIZA</span>
-        </div>
+      <div class="absolute inset-0 bg-center bg-cover bg-no-repeat rounded-lg"
+           style="background-image: url('../../assets/suizaPaisaje.jpg');"></div>
+      <div
+        class="absolute inset-0 bg-white bg-opacity-0 rounded-lg  backdrop-blur-sm flex items-center justify-center">
+        <span class="text-white font-bold text-4xl">SUIZA</span>
+      </div>
     </div>
 
-</div>
-<div class="bg-no-repeat bg-center bg-cover bg-fixed w-full p-3 md:p-20 backdrop-blur-0" style="background-image: url('../../assets/imgcountries.jpg');">
-  <div class="text-center p-5 m-10 bg-white rounded-lg ">Trabajar en el extranjero es una experiencia única que ofrece múltiples ventajas y beneficios.
-    Descubrir nuevas culturas, aprender idiomas y ampliar tus horizontes profesionales son solo algunos de los atractivos que esta aventura te puede proporcionar.
-    Además, trabajar en el extranjero te permite desarrollar habilidades interculturales y adaptarte a diferentes entornos laborales, lo que sin duda aumentará
-    tu valor en el mercado laboral. También tendrás la oportunidad de hacer conexiones internacionales y ampliar tu red de contactos. Y no olvidemos los beneficios
-    financieros, ya que trabajar en ciertos países puede ofrecer salarios más altos y mejores condiciones laborales. ¡Atrévete a explorar el mundo laboral y
-    descubre todas las oportunidades que te esperan en el extranjero!
   </div>
+  <div class="bg-no-repeat bg-center bg-cover bg-fixed w-full p-3 md:p-20 backdrop-blur-0" style="background-image: url('../../assets/imgcountries.jpg');">
+    <div class="text-center p-5 m-10 bg-white rounded-lg ">Trabajar en el extranjero es una experiencia única que ofrece múltiples ventajas y beneficios.
+      Descubrir nuevas culturas, aprender idiomas y ampliar tus horizontes profesionales son solo algunos de los atractivos que esta aventura te puede proporcionar.
+      Además, trabajar en el extranjero te permite desarrollar habilidades interculturales y adaptarte a diferentes entornos laborales, lo que sin duda aumentará
+      tu valor en el mercado laboral. También tendrás la oportunidad de hacer conexiones internacionales y ampliar tu red de contactos. Y no olvidemos los beneficios
+      financieros, ya que trabajar en ciertos países puede ofrecer salarios más altos y mejores condiciones laborales. ¡Atrévete a explorar el mundo laboral y
+      descubre todas las oportunidades que te esperan en el extranjero!
+    </div>
+  </div>
+  <app-footer></app-footer>
 </div>
+
