@@ -12,21 +12,19 @@ import Swal from 'sweetalert2';
 })
 export class CountriesComponent {
 
-
-  paisesBajos() {
+  canada() {
     Swal.fire({
-      title: 'PAÍSES BAJOS',
+      title: 'CANADÁ',
       width:1400,
       html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
-        '<img class="rounded-lg" src="../../assets/holandaPaisaje2.jpg" height="900" width="400" alt="">' +
+        '<img class="rounded-lg" src="../../assets/canadaAlerta.jpg" height="900" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
-            '<p class="text-justify">Los Países Bajos son atractivos para aquellos que buscan vivir y trabajar en un entorno de alta calidad de vida y equilibrio entre el trabajo y la vida personal. Con una economía estable y próspera, el país ofrece numerosas oportunidades laborales y facilidades fiscales para migrantes cualificados y empresarios. Además, su tamaño compacto facilita la exploración de este nuevo hogar, mientras que su destacado sistema educativo beneficia tanto a los residentes como a los extranjeros, muchos de los cuales hablan inglés con fluidez, facilitando la comunicación y la integración.\n</p>' +
-            '<p class="text-justify">Los Países Bajos también se destacan por su hermoso paisaje y su enfoque en la sostenibilidad y la protección del medio ambiente. Con emblemáticos molinos de viento, pintorescos canales y coloridos campos de tulipanes, el país atrae a visitantes y residentes con su belleza natural única.\n</p>' +
-            '<p class="text-justify">El sistema de transporte en los Países Bajos es reconocido por su eficiencia, con una amplia red de trenes, tranvías y autobuses que conectan todas las ciudades y pueblos importantes. Además, el país es famoso por ser uno de los más amigables para los ciclistas, con una infraestructura especialmente diseñada para fomentar el uso de la bicicleta como medio de transporte.\n</p>' +
-            '<p class="text-justify">La cultura holandesa es diversa y acogedora, con una rica historia y una mentalidad abierta. Los Países Bajos se destacan por su tolerancia y respeto hacia diferentes culturas, religiones y orientaciones sexuales. La vida social en el país es vibrante, con una amplia variedad de festivales, eventos culturales y actividades recreativas para disfrutar.\n</p>' +
-            '<p class="text-justify">Además, los Países Bajos ofrecen un excelente sistema de atención médica, accesible y de alta calidad. Los residentes tienen acceso a una amplia gama de servicios médicos y hospitales bien equipados, lo que brinda tranquilidad y seguridad en términos de salud.\n</p>' +
-            '<p class="text-justify">En términos de oportunidades laborales, los Países Bajos brindan un entorno favorable para el crecimiento profesional. Existe una alta demanda de profesionales altamente calificados en sectores como la tecnología, la ingeniería, la medicina y las ciencias. Además, el país se destaca por su próspera escena empresarial y su enfoque en la innovación y la creatividad.\n</p>' +
-            '<p class="text-justify">En resumen, mudarse a los Países Bajos puede brindar numerosas ventajas y oportunidades. Desde la calidad de vida y el equilibrio entre el trabajo y la vida personal, hasta el enfoque en la sostenibilidad, la diversidad cultural y las oportunidades laborales, este país ofrece un entorno propicio para aquellos que buscan una experiencia gratificante tanto a nivel personal como profesional.</p>' +
+            '<p class="text-justify">¡Trabajar en Canadá es una oportunidad única que no puedes dejar pasar! Este país extraordinario no solo ofrece un entorno laboral estable y próspero, sino que también brinda una calidad de vida envidiable y numerosas ventajas para los trabajadores extranjeros.\n</p>' +
+            '<p class="text-justify">En primer lugar, Canadá cuenta con una economía sólida y diversificada, lo que se traduce en una amplia gama de oportunidades laborales en diferentes sectores. Desde tecnología y salud hasta ingeniería y educación, hay demanda de profesionales calificados en múltiples campos. Además, el sistema de derechos laborales en Canadá garantiza la protección de los trabajadores y establece estándares justos en términos de salarios, horarios y condiciones de trabajo.\n</p>' +
+            '<p class="text-justify">La diversidad y la inclusión son valores fundamentales en la sociedad canadiense. Independientemente de tu origen étnico, religión o género, en Canadá encontrarás un ambiente acogedor y respetuoso. El país celebra la multiculturalidad y ofrece programas de inmigración diseñados para atraer talento internacional, lo que significa que podrás construir una carrera profesional gratificante y al mismo tiempo disfrutar de la riqueza cultural que este país tiene para ofrecer.\n</p>' +
+            '<p class="text-justify">Canadá es conocido por su impresionante belleza natural. Desde las majestuosas Montañas Rocosas hasta los impresionantes paisajes de la costa atlántica, este país te permitirá descubrir una variedad de entornos naturales espectaculares. Podrás disfrutar de actividades al aire libre como senderismo, esquí, kayak y mucho más, en lugares que te dejarán sin aliento.\n</p>' +
+            '<p class="text-justify">Además, la calidad de vida en Canadá es excepcional. El sistema de salud es de primer nivel y accesible para todos los residentes, y la educación es de alta calidad y valorada a nivel internacional. Las ciudades canadienses son seguras, limpias y ofrecen una amplia gama de opciones culturales, recreativas y de entretenimiento.\n</p>' +
+            '<p class="text-justify">Por si fuera poco, Canadá es reconocido por su política de inmigración favorable. El país cuenta con programas de inmigración diseñados específicamente para atraer y retener a trabajadores calificados, lo que facilita el proceso de establecimiento y ofrece oportunidades para la residencia permanente y la ciudadanía.\n</p>' +
           '</div>' +
         '</div>',
       confirmButtonText:
@@ -36,20 +34,20 @@ export class CountriesComponent {
     })
   }
 
-  austria() {
+
+  malta() {
     Swal.fire({
-      title: 'AUSTRIA',
+      title: 'MALTA',
       width:1400,
       html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
-        '<img class="rounded-lg" src="../../assets/austriaPaisaje2.jpg" height="800" width="400" alt="">' +
+        '<img class="rounded-lg" src="../../assets/maltaAlerta.jpg" height="900" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
-            '<p class="text-justify">La hostelería austriaca es una industria próspera y emocionante que ofrece una amplia gama de motivos convincentes para vivir y trabajar en ella. Al trabajar en este sector, los empleados tienen la oportunidad de sumergirse en la rica cultura local y colaborar con personas de todo el mundo, lo que fomenta la diversidad y el intercambio cultural.\n</p>' +
-            '<p class="text-justify">Una de las ventajas más destacadas de trabajar en la hostelería austriaca es la estabilidad laboral que ofrece. Existe una gran demanda de trabajadores en este sector, lo que significa que las oportunidades de empleo son abundantes. Además, la industria ofrece múltiples posibilidades de crecimiento profesional, desde roles de entrada hasta puestos gerenciales, lo que permite a los trabajadores desarrollar y avanzar en sus carreras.\n</p>' +
-            '<p class="text-justify">Trabajar en la hostelería austriaca también brinda la oportunidad de adquirir nuevas habilidades y conocimientos. Por ejemplo, muchos empleados tienen la posibilidad de aprender un nuevo idioma, como el alemán, que es ampliamente hablado en Austria. Además, aquellos interesados en el mundo del vino pueden adquirir conocimientos en enología, ya que Austria es conocida por sus excelentes viñedos y vinos de alta calidad.\n</p>' +
-            '<p class="text-justify">En cuanto a los beneficios laborales, la hostelería austriaca ofrece salarios competitivos, lo que proporciona una remuneración justa por el trabajo realizado. Además, los empleados suelen recibir propinas generosas, lo que puede aumentar significativamente sus ingresos. Algunos establecimientos también ofrecen beneficios adicionales, como alojamiento y comidas gratuitas, lo que contribuye a reducir los gastos diarios y mejora la calidad de vida de los trabajadores.\n</p>' +
-            '<p class="text-justify">Austria, en general, es conocida por su alta calidad de vida. El país cuenta con un sistema de salud público de clase mundial, lo que garantiza que los empleados tengan acceso a atención médica de calidad. Asimismo, el sistema educativo austriaco es sólido y se valora la educación, lo que brinda oportunidades de aprendizaje y crecimiento tanto para los trabajadores como para sus familias.\n</p>' +
-            '<p class="text-justify">Además de las ventajas laborales y los servicios públicos de calidad, Austria ofrece una amplia variedad de actividades culturales y deportivas para disfrutar durante el tiempo libre. Desde conciertos y eventos teatrales hasta impresionantes paisajes naturales para explorar, el país brinda opciones para todos los gustos e intereses. Ya sea que desees visitar los Alpes austríacos para esquiar o disfrutar de los festivales culturales en Viena, hay algo para todos.</p>' +
-            '<p class="text-justify">En resumen, mudarse a los Países Bajos puede brindar numerosas ventajas y oportunidades. Desde la calidad de vida y el equilibrio entre el trabajo y la vida personal, hasta el enfoque en la sostenibilidad, la diversidad cultural y las oportunidades laborales, este país ofrece un entorno propicio para aquellos que buscan una experiencia gratificante tanto a nivel personal como profesional.</p>' +
+            '<p class="text-justify">¡Malta es un destino laboral que te sorprenderá en todos los sentidos! Esta hermosa isla mediterránea ofrece una combinación única de oportunidades profesionales, calidad de vida excepcional y una rica historia y cultura para disfrutar.\n</p>' +
+            '<p class="text-justify">En primer lugar, Malta cuenta con un floreciente sector económico y una ubicación estratégica en el corazón del Mediterráneo. Es un centro en constante crecimiento para industrias como la tecnología, los juegos en línea, la inteligencia artificial y los servicios financieros. Si buscas trabajar en un entorno empresarial innovador y dinámico, Malta es el lugar perfecto para ti.\n</p>' +
+            '<p class="text-justify">Además de sus oportunidades laborales, Malta ofrece una calidad de vida envidiable. Con su clima cálido y soleado durante gran parte del año, playas de aguas cristalinas y una atmósfera relajada, podrás disfrutar de un estilo de vida tranquilo y equilibrado. La isla también tiene una rica historia y patrimonio cultural, con sitios históricos fascinantes, festivales tradicionales y una deliciosa gastronomía mediterránea.\n</p>' +
+            '<p class="text-justify">El sistema educativo en Malta es de alta calidad, con instituciones académicas reconocidas internacionalmente y una amplia gama de programas de estudio. Además, el país cuenta con una excelente infraestructura de atención médica y seguridad social para garantizar el bienestar de sus residentes.\n</p>' +
+            '<p class="text-justify">Malta es un crisol de culturas y nacionalidades, lo que crea una comunidad diversa y multicultural. Te encontrarás rodeado de personas amigables y acogedoras, lo que hará que te sientas como en casa. Además, el inglés es ampliamente hablado en Malta, lo que facilita la comunicación y la integración en el entorno laboral y social.\n</p>' +
+            '<p class="text-justify">La ubicación geográfica de Malta también ofrece ventajas adicionales. Como miembro de la Unión Europea, Malta brinda acceso a un mercado laboral más amplio y la posibilidad de viajar sin restricciones por Europa. Además, su excelente conexión aérea te permitirá explorar fácilmente otros destinos europeos y disfrutar de escapadas de fin de semana emocionantes.\n</p>' +
           '</div>' +
         '</div>',
       confirmButtonText:
@@ -59,16 +57,43 @@ export class CountriesComponent {
     })
   }
 
-  suiza() {
+  reinoUnido() {
     Swal.fire({
-      title: 'SUIZA',
+      title: 'REINO UNIDO',
+      width:1400,
+      html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
+        '<img class="rounded-lg" src="../../assets/reinoUnidoAlerta.jpg" height="800" width="400" alt="">' +
+          '<div class="flex flex-col justify-start items-start m-7">' +
+            '<p class="text-justify">¡El Reino Unido es el lugar perfecto para trabajar y prosperar! Con una rica historia, una economía vibrante y una diversidad cultural inigualable, este país te ofrece innumerables oportunidades para desarrollar tu carrera y disfrutar de una vida emocionante.\n</p>' +
+            '<p class="text-justify">En primer lugar, el Reino Unido es reconocido a nivel mundial por su excelencia académica. Con prestigiosas universidades y centros de investigación de renombre, el país se destaca en campos como la ciencia, la tecnología, la ingeniería y las artes. Si buscas crecimiento profesional y adquirir conocimientos de vanguardia, el Reino Unido es el lugar ideal para ti.\n</p>' +
+            '<p class="text-justify">La economía del Reino Unido es dinámica y diversa, lo que significa que hay oportunidades laborales en una amplia gama de sectores. Desde finanzas y tecnología hasta medicina y diseño, encontrarás opciones emocionantes y bien remuneradas. Además, el Reino Unido ofrece un ambiente empresarial favorable, con una sólida infraestructura y acceso a mercados globales.\n</p>' +
+            '<p class="text-justify">La vida en el Reino Unido es emocionante y enriquecedora. Tanto si prefieres la vibrante ciudad de Londres como si optas por las pintorescas ciudades universitarias o los paisajes naturales impresionantes de Escocia y Gales, hay un lugar para cada gusto. La escena cultural es diversa y en constante evolución, con teatros de renombre mundial, museos fascinantes y festivales emocionantes que te mantendrán inspirado y entretenido.\n</p>' +
+            '<p class="text-justify">La calidad de vida en el Reino Unido es alta, con un sistema de salud de calidad, servicios públicos confiables y una amplia gama de opciones de ocio. Además, el país ofrece una excelente red de transporte que te permitirá explorar tanto el Reino Unido como el resto de Europa de manera conveniente y accesible.\n</p>' +
+            '<p class="text-justify">La multiculturalidad es un pilar fundamental en el Reino Unido. Aquí, podrás interactuar con personas de diversas nacionalidades y culturas, lo que te brindará una experiencia enriquecedora y te permitirá ampliar tu perspectiva. El país valora la diversidad y ofrece programas de inmigración que facilitan la llegada de profesionales internacionales.</p>' +
+          '</div>' +
+        '</div>',
+      confirmButtonText:
+        '<i class="fa fa-times text-xl"></i> CERRAR',
+      confirmButtonAriaLabel: 'CERRAR',
+      confirmButtonColor: '#808d99',
+    })
+  }
+
+  australia() {
+    Swal.fire({
+      title: 'AUSTRALIA',
       width:1200,
       html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
-        '<img class="rounded-lg" src="../../assets/suizaPaisaje2.jpg" height="600" width="400" alt="">' +
+        '<img class="rounded-lg" src="../../assets/australiaAlerta.jpg" height="600" width="400" alt="">' +
           '<div class="flex flex-col justify-start items-start m-7">' +
-            '<p class="text-justify">Existen múltiples razones por las que alguien podría contemplar la idea de trasladarse a Suiza para vivir y trabajar. El país helvético es reconocido por su elevado nivel de vida y se ubica consistentemente entre los lugares más atractivos del mundo para establecerse.</p>' +
-            '<p class="text-justify">En 2021, el Índice de Mejor Vida de la OCDE reveló que Suiza se sitúa por encima del promedio de los países miembros en aspectos como el bienestar subjetivo, el empleo y los ingresos, la salud, las conexiones sociales, la calidad del medio ambiente, la educación y las habilidades, el equilibrio entre la vida laboral y personal, la vivienda y la seguridad personal. Además, Suiza es reconocida por su gran puntualidad y organización. Es el hogar de muchas grandes empresas multinacionales y ofrece amplias oportunidades de trabajo para expatriados.</p>' +
-            '<p class="text-justify">No hay que dejar de lado la belleza de Suiza como país, con sus majestuosas montañas, su delicioso chocolate, sus paisajes de ensueño. Resulta muy fácil quedar maravillado con la vista que se disfruta al viajar en tren o fascinado con el estilo de vida de sus habitantes. En conclusión, es una experiencia sumamente recomendable.</p>' +
+            '<p class="text-justify">¡Australia te espera con los brazos abiertos para una experiencia laboral única! Este vasto continente ofrece un sinfín de oportunidades profesionales, una calidad de vida excepcional y una naturaleza impresionante que te dejará sin aliento.</p>' +
+            '<p class="text-justify">En primer lugar, Australia cuenta con una economía fuerte y diversificada. Con sectores en crecimiento como la tecnología, la ingeniería, la medicina, la minería y la agricultura, encontrarás una amplia gama de opciones para desarrollar tu carrera profesional. Además, el país valora la innovación y el emprendimiento, lo que significa que hay oportunidades para aquellos que deseen iniciar sus propios negocios.</p>' +
+            '<p class="text-justify">La calidad de vida en Australia es reconocida en todo el mundo. Con ciudades vibrantes y seguras, playas de ensueño, parques nacionales impresionantes y una cultura al aire libre, tendrás infinitas posibilidades para disfrutar de tu tiempo libre. Además, el sistema de salud y educación en Australia es de primera clase, brindando acceso a servicios de alta calidad para ti y tu familia.</p>' +
+            '<p class="text-justify">La multiculturalidad es un aspecto fundamental de la sociedad australiana. Con una población diversa y acogedora, te encontrarás inmerso en un entorno en el que se celebran todas las culturas y se fomenta la inclusión. Esto te permitirá ampliar tus horizontes y aprender de personas de todo el mundo.</p>' +
+            '<p class="text-justify">Australia es conocida por su impresionante belleza natural. Desde la Gran Barrera de Coral hasta el icónico Uluru, los parques nacionales y las reservas naturales ofrecen una biodiversidad única y paisajes de ensueño. Tendrás la oportunidad de explorar playas paradisíacas, bucear en arrecifes de coral, hacer senderismo en montañas escarpadas y admirar la fauna única de este país.</p>' +
+            '<p class="text-justify">Además, Australia es un país seguro y estable, con una infraestructura confiable y un sistema legal robusto que protege los derechos de los trabajadores. También cuenta con un sistema de inmigración y visas diseñado para atraer talento internacional y facilitar la integración de profesionales extranjeros.</p>' +
+
+
           '</div>' +
         '</div>',
       confirmButtonText:
