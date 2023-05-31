@@ -1,6 +1,6 @@
 .carousel-wrapper {
   width: 100%;
-  height: 350px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,12 +17,12 @@
 
 .carousel {
   display: flex;
-  width: 1200px;
-  animation: sliding 6s infinite;
+  width: 600%;
+  animation: sliding 50s infinite;
 }
 .carousel div {
-  width: 400px;
-  height: 250px;
+  width: 16.66%;
+  height: 450px;
   background-size: cover;
   background-position: center;
 }
@@ -38,22 +38,34 @@
 .carousel .image-three {
   background-image: url("../../assets/canadaCarrusel.jpg");
 }
+.carousel .image-four {
+  background-image: url("../../assets/maltaCarrusel.jpg");
+}
+.carousel .image-five {
+  background-image: url("../../assets/reinoUnidoCarrusel.jpg");
+}
+.carousel .image-six {
+  background-image: url("../../assets/australiaCarrusel.jpg");
+}
 
 @keyframes sliding {
-  30% {
+  0% {
     transform: translateX(0);
   }
-  35% {
-    transform: translateX(-400px);
+  16.66% {
+    transform: translateX(-16.66%);
   }
-  65% {
-    transform: translateX(-400px);
+  33.33% {
+    transform: translateX(-33.33%);
   }
-  70% {
-    transform: translateX(-800px);
+  50% {
+    transform: translateX(-50%);
   }
-  98% {
-    transform: translateX(-800px);
+  66.66% {
+    transform: translateX(-66.66%);
+  }
+  83.33% {
+    transform: translateX(-83.33%);
   }
   100% {
     transform: translateX(0);
