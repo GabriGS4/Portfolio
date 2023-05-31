@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { FooterComponent } from './footer/footer.component';
+import { HelpDetailsComponent } from './help-details/help-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     ContactUsComponent,
     NavbarComponent,
     OfertasComponent,
-    FooterComponent
+    FooterComponent,
+    HelpDetailsComponent
   ],
   imports: [
     BrowserModule,

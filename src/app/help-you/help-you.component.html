@@ -9,13 +9,13 @@
     <div class="mx-auto container py-8">
       <div class="flex flex-wrap items-center lg:justify-between justify-center">
         <!-- Card 1 -->
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="habilidadesDetails()" routerLink="/help-details">
           <div>
             <img src="./assets/help1.jpg" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Cuáles son mis habilidades?</h2>
+              <h2 class="text-lg font-semibold text-center">{{habilidadesTitulo}}</h2>
               <p class="text-xs text-gray-600 mt-2">
                 El proceso de adquirir la capacidad de reconocer y familiarizarse con tus aptitudes implica sumergirte...
               </p>
@@ -24,13 +24,13 @@
         </div>
         <!-- Card 1 Ends -->
         <!-- Card 2 -->
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="confiarDetails()" routerLink="/help-details">
           <div>
             <img src="./assets/help2.jpg" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Por qué confiar en nosotros?</h2>
+              <h2 class="text-lg font-semibold text-center">{{confiarTitulo}}</h2>
               <p class="text-xs text-gray-600 mt-2">
                 Deseamos convertirnos en un aliado confiable y comprometido, dispuesto a abordar todos tus desafíos...
               </p>
@@ -39,13 +39,13 @@
         </div>
         <!-- Card 2 Ends -->
         <!-- Card 3  -->
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="idiomasDetails()" routerLink="/help-details">
           <div>
             <img src="./assets/help2.jpg" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Puedo irme a trabjar al extranjero sin saber idiomas?</h2>
+              <h2 class="text-lg font-semibold text-center">{{idiomasTitulo}}</h2>
               <p class="text-xs text-gray-600 mt-2">
                 Definitivamente, ir a trabajar al extranjero sin saber idiomas es una aventura emocionante...
               </p>
@@ -72,16 +72,17 @@
       </div>
       <div class="flex flex-wrap items-center lg:justify-between justify-center pb-10 mt-16">
         <!-- Card 1 -->
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="diferenciaDetails()" routerLink="/help-details">
           <div>
             <img src="./assets/help3.jpg" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Cuáles son los beneficios de utilizar nuestros servicios de reclutamiento para buscar empleo en otros países?
+              <h2 class="text-lg font-semibold text-center">
+                {{diferenciaTitulo}}
               </h2>
               <p class="text-xs text-gray-600 mt-2">
-                Definitivamente, ir a trabajar al extranjero sin saber idiomas es una aventura emocionante...
+                En nuestro enfoque cercano y comprometido, nos consideramos más que una empresa...
               </p>
             </div>
           </div>

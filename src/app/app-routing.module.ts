@@ -7,6 +7,7 @@ import { HelpYouComponent } from './help-you/help-you.component';
 import { CountriesComponent } from './countries/countries.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
+import { HelpDetailsComponent } from "./help-details/help-details.component";
 
 
 const routes: Routes = [
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path: 'countries', component: CountriesComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'ofertas', component: OfertasComponent},
+  {path: 'help-details', component: HelpDetailsComponent},
+
 
   {path: '**', redirectTo: '', pathMatch:'full'},
 
