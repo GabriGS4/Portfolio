@@ -12,6 +12,29 @@ import Swal from 'sweetalert2';
 })
 export class CountriesComponent {
 
+  irlanda() {
+    Swal.fire({
+      title: 'IRLANDA',
+      width:1400,
+      html:'<div class="flex flex-col md:flex-row justify-center items-center align-middle">' +
+        '<img class="rounded-lg" src="../../assets/irlandaAlerta.jpg" height="900" width="400" alt="">' +
+        '<div class="flex flex-col justify-start items-start m-7">' +
+        '<p class="text-justify">¡Irlanda es el destino perfecto para darle un impulso a tu carrera profesional! Este país cautivador te ofrece una combinación única de oportunidades laborales, calidad de vida excepcional y una rica herencia cultural que te sorprenderá.\n</p>' +
+        '<p class="text-justify">En primer lugar, Irlanda es conocida como la "isla esmeralda" y alberga un floreciente sector tecnológico y de innovación. Con empresas globales de renombre y un entorno empresarial en constante crecimiento, tendrás acceso a oportunidades emocionantes en áreas como la tecnología de la información, las finanzas, las ciencias de la vida y las industrias creativas. Irlanda es un centro de innovación y emprendimiento, lo que la convierte en el lugar perfecto para desarrollar tu carrera y explorar nuevas posibilidades.\n</p>' +
+        '<p class="text-justify">Además de las oportunidades laborales, Irlanda ofrece una calidad de vida excepcional. Con su hermoso paisaje, desde acantilados escarpados hasta pintorescos paisajes verdes, y una gran cantidad de actividades al aire libre, podrás disfrutar de un estilo de vida equilibrado y saludable. Las ciudades irlandesas son vibrantes y acogedoras, con una animada escena cultural y una rica tradición musical.</p>' +
+        '<p class="text-justify">La educación en Irlanda es de alta calidad y reconocida a nivel mundial. Con prestigiosas universidades y centros de investigación líderes en diversas disciplinas, tendrás acceso a programas académicos de vanguardia y oportunidades de desarrollo personal y profesional.\n</p>' +
+        '<p class="text-justify">La cultura irlandesa es famosa por su calidez y hospitalidad. Los irlandeses son conocidos por su amabilidad y su actitud acogedora hacia los extranjeros. Al unirte a la fuerza laboral irlandesa, tendrás la oportunidad de trabajar en un entorno multicultural y colaborativo, donde tus habilidades y talentos serán valorados.\n</p>' +
+        '<p class="text-justify">Irlanda es también un lugar estratégico para viajar por Europa. Con excelentes conexiones de transporte, podrás explorar fácilmente otros países europeos durante tus días libres o vacaciones.\n</p>' +
+        '<p class="text-justify">Irlanda cuenta con un sistema de impuestos favorable para los profesionales extranjeros, lo que puede resultar en beneficios financieros atractivos. Además, el proceso de solicitud de visa de trabajo y residencia en Irlanda es relativamente sencillo y accesible.</p>' +
+        '</div>' +
+        '</div>',
+      confirmButtonText:
+        '<i class="fa fa-times text-xl"></i> CERRAR',
+      confirmButtonAriaLabel: 'CERRAR',
+      confirmButtonColor: '#808d99',
+    })
+  }
+
   canada() {
     Swal.fire({
       title: 'CANADÁ',
@@ -102,4 +125,8 @@ export class CountriesComponent {
       confirmButtonColor: '#808d99',
     })
   }
+
+
+
+
 }
