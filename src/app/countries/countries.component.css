@@ -1,73 +1,46 @@
-.carousel-wrapper {
-  width: 100%;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
-  margin: 0;
-}
-
 .carousel-container {
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  margin: 0 auto;
 }
 
-.carousel {
+.carousel-slide {
   display: flex;
-  width: 600%;
-  animation: sliding 50s infinite;
-}
-.carousel div {
-  width: 16.66%;
-  height: 450px;
-  background-size: cover;
-  background-position: center;
-}
-.carousel:hover {
-  animation-play-state: paused;
-}
-.carousel .image-one {
-  background-image: url("../../assets/imgHeaderCountries.jpg");
-}
-.carousel .image-two {
-  background-image: url("../../assets/irlandaCarrusel.jpg");
-}
-.carousel .image-three {
-  background-image: url("../../assets/canadaCarrusel.jpg");
-}
-.carousel .image-four {
-  background-image: url("../../assets/maltaCarrusel.jpg");
-}
-.carousel .image-five {
-  background-image: url("../../assets/reinoUnidoCarrusel.jpg");
-}
-.carousel .image-six {
-  background-image: url("../../assets/australiaCarrusel.jpg");
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  height: 400px; /* Ajusta la altura deseada */
 }
 
-@keyframes sliding {
-  0% {
-    transform: translateX(0);
+.carousel-slide div {
+  flex-shrink: 0;
+  width: 100%; /* Ajusta el ancho de cada imagen */
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-container .carousel-slide {
+  animation: carousel 17s infinite; /* Ajusta la duración de la animación */
+}
+
+@keyframes carousel {
+  0%, 100% {
+    transform: translateX(0%);
   }
-  16.66% {
-    transform: translateX(-16.66%);
+  16.666% {
+    transform: translateX(0%);
   }
-  33.33% {
-    transform: translateX(-33.33%);
+  33.333% {
+    transform: translateX(-100%);
   }
   50% {
-    transform: translateX(-50%);
+    transform: translateX(-200%);
   }
-  66.66% {
-    transform: translateX(-66.66%);
+  66.666% {
+    transform: translateX(-300%);
   }
-  83.33% {
-    transform: translateX(-83.33%);
+  83.333% {
+    transform: translateX(-400%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-500%);
   }
 }
