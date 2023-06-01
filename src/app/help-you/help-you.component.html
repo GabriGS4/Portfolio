@@ -1,7 +1,6 @@
 <div class="w-full h-full bg-gray-200">
 
-  <h1 class="text-center text-sky-300 text-6xl p-10 pt-20 font-extrabold">AYUDA</h1>
-  <h3 class="text-gray-700 text-3xl text-center font-bold m-5">PREGUNTAS FRECUENTES</h3>
+  <h1 class="text-gray-700 text-3xl text-center p-5 font-extrabold">PREGUNTAS FRECUENTES</h1>
 
 
   <div class="bg-gray-200">
@@ -11,7 +10,7 @@
         <!-- Card 1 -->
         <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="habilidadesDetails()" routerLink="/help-details">
           <div>
-            <img src="./assets/help1.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlHabilidades" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
@@ -26,7 +25,7 @@
         <!-- Card 2 -->
         <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="confiarDetails()" routerLink="/help-details">
           <div>
-            <img src="./assets/help2.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlConfiar" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
@@ -41,7 +40,7 @@
         <!-- Card 3  -->
         <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="idiomasDetails()" routerLink="/help-details">
           <div>
-            <img src="./assets/help2.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlIdiomas" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
@@ -56,7 +55,7 @@
         <!-- Card 4  -->
         <div class="w-72 mx-2 lg:mb-0 mb-8 cursor-pointer">
           <div>
-            <img src="./assets/help3.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlDiferencia" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
@@ -118,15 +117,14 @@
         </div>
         <!-- Card 3 Ends -->
         <!-- Card 4  -->
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer" (click)="requisitosDetails()" routerLink="/help-details">
           <div>
-            <img src="./assets/help3.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlRequisitos" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Puedo irme a trabjar al extranjero sin saber idiomas?</h2>
-              <p class="text-xs text-gray-600 mt-2">The Apple iPhone XS is available in 3 colors with 64GB memory. Shoot
-                amazing videos</p>
+              <h2 class="text-lg font-semibold text-center">{{requisitosTitulo}}</h2>
+              <p class="text-xs text-gray-600 mt-2">Para ser reclutado y trabajar en otro país a través de nuestra agencia, debes cumplir con los siguientes requisitos...</p>
             </div>
           </div>
         </div>

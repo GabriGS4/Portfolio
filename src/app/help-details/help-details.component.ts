@@ -10,8 +10,10 @@ export class HelpDetailsComponent {
   constructor(private dataSharingService: DataSharingService) { }
   titulo: string = ''
   descripcion: string = ''
+  imagen: string = ''
   ngOnInit() {
     this.titulo = this.dataSharingService.getTitulo();
     this.descripcion = this.dataSharingService.getDescripcion();
+    this.imagen = this.dataSharingService.getUrlImagen();
   }
 }

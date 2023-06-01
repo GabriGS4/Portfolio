@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'help', component: HelpYouComponent},
   {path: 'countries', component: CountriesComponent},
   {path: 'about-us', component: AboutUsComponent},
-  {path: 'ofertas', component: OfertasComponent},
+  // {path: 'ofertas', component: OfertasComponent},
   {path: 'help-details', component: HelpDetailsComponent},
 
 
