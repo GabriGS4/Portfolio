@@ -1,20 +1,101 @@
 <div class="w-full h-full">
 
 
-  <div class="carousel-container">
-    <div class="carousel-slide">
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/imgHeaderCountries.jpg");'>
+  <!--  <div class="carousel-container">
+      <div class="carousel-slide">
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/imgHeaderCountries.jpg");'>
+          <div
+            class="absolute flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">PAÍSES</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold">CONTEMPLA OTRAS OPCIONES</h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold">DISFRUTA DE TU EXPERIENCIA EN OTROS
+              PAÍSES DEL MUNDO</h4>
+          </div>
+        </div>
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/irlandaCarrusel.jpg");'>
+          <div
+            class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">IRLANDA</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">La tierra donde la
+              historia ancestral se encuentra con paisajes de ensueño,</h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">la música celta y la
+              hospitalidad infinita</h4>
+          </div>
+        </div>
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/canadaCarrusel.jpg");'>
+          <div
+            class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">CANADÁ</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una nación diversa y
+              acogedora donde la naturaleza </h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">majestuosa se fusiona con
+              la hospitalidad incomparable</h4>
+          </div>
+        </div>
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/maltaCarrusel.jpg");'>
+          <div
+            class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">MALTA</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una joya mediterránea
+              llena de encanto histórico, </h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">playas de ensueño y una
+              cultura vibrante</h4>
+          </div>
+        </div>
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/reinoUnidoCarrusel.jpg");'>
+          <div
+            class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">REINO UNIDO</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una nación de rica
+              historia, </h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">diversidad cultural y
+              paisajes impresionantes</h4>
+          </div>
+        </div>
+        <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/australiaCarrusel.jpg");'>
+          <div
+            class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+            <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">AUSTRALIA</h1>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una tierra de vastas
+              maravillas naturales,</h4>
+            <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase"> una cultura diversa y
+              experiencias inolvidables</h4>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+
+  <div class="carousel relative relative overflow-hidden shadow-xl">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input class="carousel-open hidden" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+             checked="checked">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat"
+           style="height:500px; background-image: url('./assets/imgHeaderCountries.jpg')">
         <div
-          class="absolute flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">PAÍSES</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold">CONTEMPLA OTRAS OPCIONES</h4>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold">DISFRUTA DE TU EXPERIENCIA EN OTROS
             PAÍSES DEL MUNDO</h4>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/irlandaCarrusel.jpg");'>
+      <label for="carousel-6"
+             class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-2"
+             class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
+
+      <!--Slide 2-->
+      <input class="carousel-open hidden" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat "
+           style="height:500px; background-image: url('./assets/irlandaCarrusel.jpg')">
         <div
-          class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">IRLANDA</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">La tierra donde la
             historia ancestral se encuentra con paisajes de ensueño,</h4>
@@ -22,9 +103,21 @@
             hospitalidad infinita</h4>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/canadaCarrusel.jpg");'>
+      <label for="carousel-1"
+             class=" control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-3"
+             class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
+
+      <!--Slide 3-->
+      <input class="carousel-open hidden" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat"
+           style="height:500px; background-image: url('./assets/canadaCarrusel.jpg')">
         <div
-          class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">CANADÁ</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una nación diversa y
             acogedora donde la naturaleza </h4>
@@ -32,9 +125,21 @@
             la hospitalidad incomparable</h4>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/maltaCarrusel.jpg");'>
+      <label for="carousel-2"
+             class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-4"
+             class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
+
+      <!--Slide 4-->
+      <input class="carousel-open hidden" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat"
+           style="height:500px; background-image: url('./assets/maltaCarrusel.jpg')">
         <div
-          class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">MALTA</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una joya mediterránea
             llena de encanto histórico, </h4>
@@ -42,9 +147,21 @@
             cultura vibrante</h4>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/reinoUnidoCarrusel.jpg");'>
+      <label for="carousel-3"
+             class="control-4 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-5"
+             class="next control-4 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
+
+      <!--Slide 5-->
+      <input class="carousel-open hidden" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat "
+           style="height:500px; background-image: url('./assets/reinoUnidoCarrusel.jpg')">
         <div
-          class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">REINO UNIDO</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una nación de rica
             historia, </h4>
@@ -52,9 +169,21 @@
             paisajes impresionantes</h4>
         </div>
       </div>
-      <div class="bg-cover bg-center bg-cover bg-fixed" style='background-image: url("./assets/australiaCarrusel.jpg");'>
+      <label for="carousel-4"
+             class=" control-5 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-6"
+             class="next control-5 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
+
+      <!--Slide 6-->
+      <input class="carousel-open hidden" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center bg-cover bg-no-repeat"
+           style="height:500px; background-image: url('./assets/australiaCarrusel.jpg')">
         <div
-          class="absolute flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
+          class="w-full h-full carousel-item flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">AUSTRALIA</h1>
           <h4 class="text-justify md:text-left text-sm md:text-3xl font-semibold uppercase">Una tierra de vastas
             maravillas naturales,</h4>
@@ -62,6 +191,14 @@
             experiencias inolvidables</h4>
         </div>
       </div>
+      <label for="carousel-5"
+             class="control-6 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 left-0 my-auto">
+        <i class="fas fa-angle-left mt-3"></i>
+      </label>
+      <label for="carousel-1"
+             class="next control-6 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-transparent hover:bg-sky-400 leading-tight text-center z-10 inset-y-0 right-0 my-auto">
+        <i class="fas fa-angle-right mt-3"></i>
+      </label>
     </div>
   </div>
 

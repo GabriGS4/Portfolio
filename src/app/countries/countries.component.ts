@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { OfertasComponent } from '../ofertas/ofertas.component';
 import Swal from 'sweetalert2';
 
@@ -10,7 +10,15 @@ import Swal from 'sweetalert2';
   templateUrl: './countries.component.html',
   styleUrls: ['./countries.component.css']
 })
-export class CountriesComponent {
+export class CountriesComponent implements OnInit{
+
+  ngOnInit() {
+    // Iniciar la rotación automática del carrusel cada 3 segundos
+/*    setInterval(() => {
+      this.autoRotateCarousel();
+    }, 3000);*/
+  }
+
 
   irlanda() {
     Swal.fire({
@@ -125,5 +133,26 @@ export class CountriesComponent {
       confirmButtonColor: '#808d99',
     })
   }
+
+
+/*  autoRotateCarousel() {
+    // Obtener todos los botones de control del carrusel
+    const carouselControls = document.querySelectorAll<HTMLInputElement>("[class^='control-']");
+
+    // Obtener el índice del botón actualmente seleccionado
+    let activeControlIndex = -1;
+    for (let i = 0; i < carouselControls.length; i++) {
+      if (carouselControls[i].checked) {
+        activeControlIndex = i;
+        break;
+      }
+    }
+
+    // Calcular el índice del siguiente botón a hacer clic
+    const nextControlIndex = (activeControlIndex + 1) % carouselControls.length;
+
+    // Hacer clic en el siguiente botón
+    carouselControls[nextControlIndex].click();
+  }*/
 
 }
