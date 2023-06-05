@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import { OfertasComponent } from '../ofertas/ofertas.component';
 import Swal from 'sweetalert2';
-
+import {Carousel, initTE} from "tw-elements";
 
 
 
@@ -13,10 +13,7 @@ import Swal from 'sweetalert2';
 export class CountriesComponent implements OnInit{
 
   ngOnInit() {
-    // Iniciar la rotación automática del carrusel cada 3 segundos
-/*    setInterval(() => {
-      this.autoRotateCarousel();
-    }, 3000);*/
+    initTE({ Carousel });
   }
 
 
@@ -36,10 +33,8 @@ export class CountriesComponent implements OnInit{
         '<p class="text-justify">Irlanda cuenta con un sistema de impuestos favorable para los profesionales extranjeros, lo que puede resultar en beneficios financieros atractivos. Además, el proceso de solicitud de visa de trabajo y residencia en Irlanda es relativamente sencillo y accesible.</p>' +
         '</div>' +
         '</div>',
-      confirmButtonText:
-        '<i class="fa fa-times text-xl"></i> CERRAR',
-      confirmButtonAriaLabel: 'CERRAR',
-      confirmButtonColor: '#808d99',
+      showCloseButton: true,
+      showConfirmButton: false,
     })
   }
 
@@ -58,10 +53,8 @@ export class CountriesComponent implements OnInit{
             '<p class="text-justify">Por si fuera poco, Canadá es reconocido por su política de inmigración favorable. El país cuenta con programas de inmigración diseñados específicamente para atraer y retener a trabajadores calificados, lo que facilita el proceso de establecimiento y ofrece oportunidades para la residencia permanente y la ciudadanía.\n</p>' +
           '</div>' +
         '</div>',
-      confirmButtonText:
-        '<i class="fa fa-times text-xl"></i> CERRAR',
-      confirmButtonAriaLabel: 'CERRAR',
-      confirmButtonColor: '#808d99',
+      showCloseButton: true,
+      showConfirmButton: false,
     })
   }
 
@@ -81,10 +74,8 @@ export class CountriesComponent implements OnInit{
             '<p class="text-justify">La ubicación geográfica de Malta también ofrece ventajas adicionales. Como miembro de la Unión Europea, Malta brinda acceso a un mercado laboral más amplio y la posibilidad de viajar sin restricciones por Europa. Además, su excelente conexión aérea te permitirá explorar fácilmente otros destinos europeos y disfrutar de escapadas de fin de semana emocionantes.\n</p>' +
           '</div>' +
         '</div>',
-      confirmButtonText:
-        '<i class="fa fa-times text-xl"></i> CERRAR',
-      confirmButtonAriaLabel: 'CERRAR',
-      confirmButtonColor: '#808d99',
+      showCloseButton: true,
+      showConfirmButton: false,
     })
   }
 
@@ -103,10 +94,8 @@ export class CountriesComponent implements OnInit{
             '<p class="text-justify">La multiculturalidad es un pilar fundamental en el Reino Unido. Aquí, podrás interactuar con personas de diversas nacionalidades y culturas, lo que te brindará una experiencia enriquecedora y te permitirá ampliar tu perspectiva. El país valora la diversidad y ofrece programas de inmigración que facilitan la llegada de profesionales internacionales.</p>' +
           '</div>' +
         '</div>',
-      confirmButtonText:
-        '<i class="fa fa-times text-xl"></i> CERRAR',
-      confirmButtonAriaLabel: 'CERRAR',
-      confirmButtonColor: '#808d99',
+      showCloseButton: true,
+      showConfirmButton: false,
     })
   }
 
@@ -127,32 +116,10 @@ export class CountriesComponent implements OnInit{
 
           '</div>' +
         '</div>',
-      confirmButtonText:
-        '<i class="fa fa-times text-xl"></i> CERRAR',
-      confirmButtonAriaLabel: 'CERRAR',
-      confirmButtonColor: '#808d99',
+      showCloseButton: true,
+      showConfirmButton: false,
+
     })
   }
-
-
-/*  autoRotateCarousel() {
-    // Obtener todos los botones de control del carrusel
-    const carouselControls = document.querySelectorAll<HTMLInputElement>("[class^='control-']");
-
-    // Obtener el índice del botón actualmente seleccionado
-    let activeControlIndex = -1;
-    for (let i = 0; i < carouselControls.length; i++) {
-      if (carouselControls[i].checked) {
-        activeControlIndex = i;
-        break;
-      }
-    }
-
-    // Calcular el índice del siguiente botón a hacer clic
-    const nextControlIndex = (activeControlIndex + 1) % carouselControls.length;
-
-    // Hacer clic en el siguiente botón
-    carouselControls[nextControlIndex].click();
-  }*/
 
 }
