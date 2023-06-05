@@ -16,6 +16,7 @@ export class HelpDetailsComponent {
   descripcion: string = ''
   imagen: string = ''
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.titulo = this.dataSharingService.getTitulo();
     this.descripcion = this.dataSharingService.getDescripcion();
     this.imagen = this.dataSharingService.getUrlImagen();

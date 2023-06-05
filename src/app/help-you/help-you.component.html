@@ -100,7 +100,7 @@
 
         <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in" (click)="diferenciaDetails()" routerLink="/help-details">
           <div class="bounce-top-icons">
-            <img src="./assets/help3.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlDiferencia" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl bounce-top-icons">
             <div class="p-4">
@@ -128,16 +128,16 @@
           </div>
         </div>
 
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in" (click)="beneficiosDetails()" routerLink="/help-details">
           <div class="bounce-top-icons">
-            <img src="./assets/help2.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgBeneficios" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl bounce-top-icons">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Qué beneficios tiene irme a trabajar a otro país?
+              <h2 class="text-lg font-semibold text-center">
+                {{ beneficiosTitulo }}
               </h2>
-              <p class="text-xs text-gray-600 mt-2">The Apple iPhone XS is available in 3 colors with 64GB memory. Shoot
-                amazing videos</p>
+              <p class="text-xs text-gray-600 mt-2">Existen varios beneficios al trabajar en otro país, los cuales pueden tener un impacto positivo tanto a nivel personal como profesional.</p>
             </div>
           </div>
         </div>
@@ -149,8 +149,7 @@
           <div class="bg-white rounded-b-xl bounce-top-icons">
             <div class="p-4">
               <h2 class="text-lg font-semibold text-center">{{requisitosTitulo}}</h2>
-              <p class="text-xs text-gray-600 mt-2">Para ser reclutado y trabajar en otro país a través de nuestra
-                agencia, debes cumplir con los siguientes requisitos...</p>
+              <p class="text-xs text-gray-600 mt-2">Cuando se trata de trabajar en otros países, es fundamental comprender que los requisitos y procesos pueden variar significativamente según el país específico...</p>
             </div>
           </div>
         </div>
