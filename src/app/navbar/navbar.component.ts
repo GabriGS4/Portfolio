@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'navbar',
@@ -12,6 +12,14 @@ export class NavbarComponent {
 
   constructor(
     public router: Router,
-  ) { }
+  ) {
+  }
+
+  closeNav() {
+    const navbarToggle = document.querySelector(
+      '[data-collapse-toggle="navbar-dropdown"]'
+    ) as HTMLElement;
+    navbarToggle.click();
+  }
 
 }

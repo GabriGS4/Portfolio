@@ -12,6 +12,15 @@ import {Carousel, initTE} from "tw-elements";
 })
 export class CountriesComponent implements OnInit{
 
+  imgCarusel = [
+    { "paises": "./assets/imgHeaderCountries.jpg" },
+    { "irlanda": "./assets/irlandaCarrusel.jpg" },
+    { "canada": "./assets/canadaCarrusel.jpg" },
+    { "malta": "./assets/maltaCarrusel.jpg" },
+    { "reinoUnido": "./assets/reinoUnidoCarrusel.jpg" },
+    { "australia": "./assets/australiaCarrusel.jpg" }
+  ]
+
   ngOnInit() {
     initTE({ Carousel });
   }

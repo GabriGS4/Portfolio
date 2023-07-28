@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { DataSharingService } from '../data-sharing.service';
+import {Component} from '@angular/core';
+import {DataSharingService} from '../data-sharing.service';
+
 @Component({
   selector: 'app-help-you',
   templateUrl: './help-you.component.html',
@@ -7,7 +8,8 @@ import { DataSharingService } from '../data-sharing.service';
 })
 export class HelpYouComponent {
   constructor(
-    private dataSharingService: DataSharingService) { }
+    private dataSharingService: DataSharingService) {
+  }
 
   habilidadesTitulo: string = '¿Cuáles son mis habilidades?'
   imgUrlHabilidades: string = './assets/habilidades.jpg'
@@ -18,7 +20,8 @@ export class HelpYouComponent {
   imgUrlIdiomas: string = './assets/help3.jpg'
   idiomasTitulo: string = '¿Puedo irme a trabajar al extranjero sin saber idiomas?'
   idiomasDesc: string = 'Definitivamente, ir a trabajar al extranjero sin saber idiomas es una aventura emocionante, pero también puede ser una tarea desafiante y requerir un gran esfuerzo por tu parte. Sin embargo, esto no debe disuadirte de buscar esta experiencia, ya que hay muchas maneras de aprender un idioma en el extranjero. Ir a un país que no habla tu idioma natal puede ser intimidante al principio, pero también es una oportunidad única para sumergirte en una nueva cultura y aprender un nuevo idioma en un ambiente auténtico y real. Podrás experimentar la cultura local y aprender el idioma de manera natural, en situaciones cotidianas, como en el trabajo, en el supermercado o en el transporte público. Es cierto que si no hablas el idioma local, es posible que tengas dificultades para comunicarte con tus compañeros de trabajo y otros locales. Sin embargo, esto no significa que no puedas hacer amigos o tener éxito en tu trabajo. Muchas empresas internacionales buscan empleados que hablen inglés, por lo que puedes encontrar trabajo en un entorno donde no necesitas hablar el idioma local para empezar. Pero lo más importante es tener una actitud positiva y estar dispuesto a aprender. Si estás dispuesto a esforzarte y a trabajar duro, puedes aprender el idioma rápidamente y mejorar tus habilidades de comunicación. También puedes aprovechar la oportunidad de tomar clases de idiomas en línea o en una escuela local para ayudarte a mejorar. En conclusión, es posible ir a trabajar al extranjero sin saber el idioma local, pero debes estar dispuesto a enfrentar un desafío y a trabajar duro para aprender el idioma y adaptarte a la cultura local. Si estás dispuesto a hacer esto, esta experiencia puede ser muy gratificante y transformadora, y puedes regresar a casa con nuevas habilidades y perspectivas que te servirán en tu vida profesional y personal.'
-  imgUrlDiferencia:string = './assets/servicios.jpg'
+  imgUrlDiferencia: string = './assets/servicios.jpg'
+  imgUrlPaises: string = './assets/documentacionPaises.jpg'
   diferenciaTitulo: string = '¿Cuáles son los beneficios de utilizar nuestros servicios de reclutamiento para buscar empleo en otros países?'
   diferenciaDesc: string = 'En nuestro enfoque cercano y comprometido, nos consideramos más que una empresa: somos tus verdaderos compañeros de viaje en esta odisea que es la vida. Entendemos la importancia de contar con apoyo y guía en cada paso que das, y por eso nos comprometemos a estar a tu lado en cada etapa de tu camino. Nuestro objetivo principal es brindarte un asesoramiento integral, de principio a fin. Queremos que te sientas respaldado y seguro en tus decisiones, sabiendo que puedes contar con nosotros para proporcionarte la información y el apoyo necesario en cada situación que enfrentes. Estamos aquí para escucharte, comprender tus necesidades y ofrecerte soluciones adecuadas y personalizadas. Además, nos enorgullece decir que no cobramos costos adicionales por nuestro asesoramiento. Creemos firmemente en la importancia de brindar un servicio accesible y de calidad, sin que el aspecto económico sea una barrera para obtener el apoyo que necesitas. Nuestro compromiso es brindarte un valor real y significativo, y eso incluye asegurarnos de que puedas acceder a nuestros servicios sin preocuparte por cargos adicionales. Nos esforzamos por ser un punto de apoyo confiable en tu viaje. Puedes acudir a nosotros en cualquier momento, sin importar las circunstancias en las que te encuentres. Ya sea que necesites orientación en momentos de incertidumbre, asistencia en la toma de decisiones importantes o simplemente alguien con quien compartir tus inquietudes, estamos aquí para ti.'
   imgUrlRequisitos: string = './assets/requisitos.jpg'
@@ -49,7 +52,9 @@ export class HelpYouComponent {
     'Crecimiento personal y ampliación de horizontes: Vivir y trabajar en otro país te brinda la oportunidad de salir de tu zona de confort, enfrentar nuevos desafíos y crecer como persona. Te permite conocer diferentes formas de vida, ampliar tu perspectiva y desarrollar una mayor confianza y autonomía.\n' +
     '\n' +
     'Estos son solo algunos de los beneficios que puedes experimentar al trabajar en otro país. Cada experiencia es única y puede ofrecer oportunidades y beneficios adicionales dependiendo del lugar al que te dirijas y tus objetivos personales y profesionales.';
-
+  imgProcesos: string = './assets/help1.jpg';
+  procesosTitulo: string = '¿Cuáles son los requisitos y procesos para trabajar en otros países?';
+  paisesTitulo: string = '¿Qué documentación necesito?';
 
   habilidadesDetails() {
     this.dataSharingService.setTitulo(this.habilidadesTitulo)
@@ -78,6 +83,11 @@ export class HelpYouComponent {
 
   }
 
+  procesosDetails() {
+    this.dataSharingService.setTitulo(this.procesosTitulo);
+    this.dataSharingService.setDescripcion(this.requisitosDesc);
+    this.dataSharingService.setUrlImagen(this.imgProcesos);
+  }
 
   requisitosDetails() {
     this.dataSharingService.setTitulo(this.requisitosTitulo)
@@ -89,5 +99,10 @@ export class HelpYouComponent {
     this.dataSharingService.setTitulo(this.beneficiosTitulo)
     this.dataSharingService.setDescripcion(this.beneficiosDesc);
     this.dataSharingService.setUrlImagen(this.imgBeneficios);
+  }
+
+  paisesDetails() {
+    this.dataSharingService.setTitulo(this.paisesTitulo);
+    this.dataSharingService.setUrlImagen(this.imgUrlPaises);
   }
 }

@@ -80,16 +80,15 @@
           </div>
         </div>
 
-        <div class="w-72 mx-2 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in">
+        <div class="w-72 mx-2 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in" (click)="paisesDetails()" routerLink="/help-details">
           <div class="bounce-top-icons">
-            <img [src]="imgUrlDiferencia" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgUrlPaises" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl bounce-top-icons">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Qué documentación necesito?</h2>
+              <h2 class="text-lg font-semibold text-center">{{ paisesTitulo }}</h2>
               <p class="text-xs text-gray-600 mt-2">
-                The Apple iPhone XS is available in 3 colors with 64GB memory. Shoot
-                amazing videos
+                Para cada país necesitarás una documetación diferente...
               </p>
             </div>
           </div>
@@ -114,16 +113,14 @@
           </div>
         </div>
 
-        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in">
+        <div class="mx-2 w-72 lg:mb-0 mb-8 cursor-pointer hover:scale-105 hover:ease-in duration-300   fade-in" (click)="procesosDetails()" routerLink="/help-details">
           <div class="bounce-top-icons">
-            <img src="./assets/help1.jpg" class="w-full h-44 rounded-t-xl"/>
+            <img [src]="imgProcesos" class="w-full h-44 rounded-t-xl"/>
           </div>
           <div class="bg-white rounded-b-xl bounce-top-icons">
             <div class="p-4">
-              <h2 class="text-lg font-semibold text-center">¿Cuáles son los requisitos y procesos para trabajar en otros
-                países?</h2>
-              <p class="text-xs text-gray-600 mt-2">The Apple iPhone XS is available in 3 colors with 64GB memory. Shoot
-                amazing videos</p>
+              <h2 class="text-lg font-semibold text-center">{{ procesosTitulo }}</h2>
+              <p class="text-xs text-gray-600 mt-2">Cuando se trata de trabajar en otros países, es fundamental comprender que los requisitos y procesos pueden variar significativamente según el país específico...</p>
             </div>
           </div>
         </div>

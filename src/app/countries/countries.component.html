@@ -215,7 +215,7 @@
       <div
         class="relative float-left -mr-[100%] w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
         data-te-carousel-item
-        data-te-carousel-active style='background-image: url("./assets/imgHeaderCountries.jpg");'>
+        data-te-carousel-active style='background-image: url({{imgCarusel[0].paises}});'>
         <div
           class="w-full h-full flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">PAÍSES</h1>
@@ -228,7 +228,7 @@
 
       <div
         class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
-        data-te-carousel-item style='background-image: url("./assets/irlandaCarrusel.jpg");'>
+        data-te-carousel-item style='background-image: url({{imgCarusel[1].irlanda}});'>
         <div
           class="w-full h-full flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">IRLANDA</h1>
@@ -241,7 +241,7 @@
 
       <div
         class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
-        data-te-carousel-item style='background-image: url("./assets/canadaCarrusel.jpg");'>
+        data-te-carousel-item style='background-image: url({{imgCarusel[2].canada}});'>
         <div
           class="w-full h-full flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">CANADÁ</h1>
@@ -253,7 +253,7 @@
       </div>
       <div
         class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
-        data-te-carousel-item style='background-image: url("./assets/maltaCarrusel.jpg");'>
+        data-te-carousel-item style='background-image: url({{imgCarusel[3].malta}});'>
         <div
           class="w-full h-full flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">MALTA</h1>
@@ -265,7 +265,7 @@
       </div>
       <div
         class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
-        data-te-carousel-item style='background-image: url("./assets/reinoUnidoCarrusel.jpg");'>
+        data-te-carousel-item style='background-image: url({{imgCarusel[4].reinoUnido}});'>
         <div
           class="w-full h-full flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">REINO UNIDO</h1>
@@ -277,7 +277,7 @@
       </div>
       <div
         class="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none bg-cover bg-center"
-        data-te-carousel-item style='background-image: url("./assets/australiaCarrusel.jpg");'>
+        data-te-carousel-item style='background-image: url({{imgCarusel[5].australia}});'>
         <div
           class="w-full h-full flex flex-col gap-5 p-20 items-center md:items-start justify-center text-white   bg-black bg-opacity-60">
           <h1 class="text-center md:text-left text-2xl md:text-9xl font-bold">AUSTRALIA</h1>
@@ -386,18 +386,20 @@
   </div>
   <div class="bg-no-repeat bg-center bg-cover bg-fixed w-full p-3 md:p-20 backdrop-blur-0"
        style="background-image: url('../../assets/imgcountries.jpg');">
-    <div class="text-center p-5 m-10 bg-white rounded-lg ">Trabajar en el extranjero es una experiencia única que ofrece
-      múltiples ventajas y beneficios.
+    <div class="text-center p-5 m-10 bg-white rounded-lg relative">
+  <span class="float-right absolute top-0 right-0 mr-2 mt-1 mb-2">
+    <i class="fas fa-info-circle text-sky-400 text-xl"></i>
+  </span>
+      Trabajar en el extranjero es una experiencia única que ofrece múltiples ventajas y beneficios.
       Descubrir nuevas culturas, aprender idiomas y ampliar tus horizontes profesionales son solo algunos de los
       atractivos que esta aventura te puede proporcionar.
       Además, trabajar en el extranjero te permite desarrollar habilidades interculturales y adaptarte a diferentes
-      entornos laborales, lo que sin duda aumentará
-      tu valor en el mercado laboral. También tendrás la oportunidad de hacer conexiones internacionales y ampliar tu
-      red de contactos. Y no olvidemos los beneficios
-      financieros, ya que trabajar en ciertos países puede ofrecer salarios más altos y mejores condiciones laborales.
-      ¡Atrévete a explorar el mundo laboral y
-      descubre todas las oportunidades que te esperan en el extranjero!
+      entornos laborales, lo que sin duda aumentará tu valor en el mercado laboral. También tendrás la oportunidad de
+      hacer conexiones internacionales y ampliar tu red de contactos. Y no olvidemos los beneficios financieros, ya que
+      trabajar en ciertos países puede ofrecer salarios más altos y mejores condiciones laborales. ¡Atrévete a explorar
+      el mundo laboral y descubre todas las oportunidades que te esperan en el extranjero!
     </div>
+
   </div>
   <app-footer></app-footer>
 </div>
