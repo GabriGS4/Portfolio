@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { OfertasComponent } from './ofertas/ofertas.component';
 import { FooterComponent } from './footer/footer.component';
 import { HelpDetailsComponent } from './help-details/help-details.component';
+import { OfertasDetailsComponent } from './ofertas-details/ofertas-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HelpDetailsComponent } from './help-details/help-details.component';
     NavbarComponent,
     OfertasComponent,
     FooterComponent,
-    HelpDetailsComponent
+    HelpDetailsComponent,
+    OfertasDetailsComponent
   ],
   imports: [
     BrowserModule,
