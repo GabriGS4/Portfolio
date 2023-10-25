@@ -16,3 +16,19 @@
     width: 100%;
 
 }
+
+ .color-primary{
+   color: #04364A;
+ }
+
+ .color-secondary {
+   color: #176B87;
+ }
+
+ .color-third {
+   color: #64CCC5;
+ }
+
+ .color-details {
+   color: #DAFFFB;
+ }

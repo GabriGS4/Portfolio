@@ -1,34 +1,37 @@
-<nav class="bg-white w-full mx-auto flex flex-wrap items-center justify-center lg:justify-between lg:flex-row-reverse border-b-2 shadow-lg">
-    <div class="absolute top-5 left-5 lg:hidden">
-        <button data-collapse-toggle="navbar-dropdown" type="button"
-        class="inline-flex items-center p-2 text-5xl text-black rounded-lg lg:hidden hover:bg-gray-200"
-        aria-controls="navbar-dropdown" aria-expanded="false">
-        <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"></path>
-        </svg>
+<nav
+  class="bg-white w-full mx-auto flex flex-wrap items-center justify-center lg:justify-between lg:flex-row-reverse border-b-2 shadow-lg fixed top-0 z-50">
+  <div class="absolute top-2 left-2 lg:hidden">
+    <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 text-5xl text-black rounded-lg lg:hidden hover:bg-gray-200"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+      <svg class="w-7 h-7" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+           xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"></path>
+      </svg>
     </button>
-    </div>
-    <div class="flex align-middle justify-center flex-row items-center lg:mr-4">
-        <img [src]="logo" routerLink="/" class="p-2 cursor-pointer" alt="" style="max-width: 120px;">
-    </div>
-    <div class="hidden w-full lg:block lg:w-auto items-center xl:ml-7" id="navbar-dropdown">
-        <ul class="flex flex-col lg:flex-row m-5 gap-7 ">
-            <li (click)="closeNav()" [ngClass]="{'text-sky-300' : router.url == '/'}" routerLink="/home"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">INICIO</li>
-            <li (click)="closeNav()" [ngClass]="{'text-sky-300' : router.url == '/about-us'}" routerLink="/about-us"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">SOBRE NOSOTROS</li>
-            <li (click)="closeNav()" [ngClass]="{'text-sky-300' : router.url == '/countries'}" routerLink="/countries"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">PAÍSES</li>
-            <li [ngClass]="{'text-sky-300' : router.url == '/trabajos'}" routerLink="/trabajos"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">TRABAJOS</li>
-            <li (click)="closeNav()" [ngClass]="{'text-sky-300' : router.url == '/help'}" routerLink="/help"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">AYUDA</li>
-            <li (click)="closeNav()" [ngClass]="{'text-sky-300' : router.url == '/contact-us'}" routerLink="/contact-us"
-                class="hover:text-sky-300 font-semibold text-gray-600 cursor-pointer">CONTACTO</li>
-        </ul>
-    </div>
+  </div>
+  <div class="flex align-middle justify-center flex-row items-center lg:mr-4">
+    <img [src]="logo" routerLink="/" class="p-2 cursor-pointer" alt="" style="max-width: 320px;">
+  </div>
+  <div class="hidden w-full lg:block lg:w-auto items-center xl:ml-7" id="navbar-dropdown">
+    <ul class="flex flex-col lg:flex-row m-5 gap-7 ">
+      <li><a (click)="closeNav()" class="text-hover font-semibold text-gray-500 cursor-pointer"
+             [ngClass]="{'color-third': href === '#home'}" href="#home">HOME</a></li>
+      <li><a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about'}"
+             class="text-hover font-semibold text-gray-500 cursor-pointer">ABOUT</a></li>
+      <li><a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about-us'}"
+             class="text-hover font-semibold text-gray-500 cursor-pointer">MAIN SKILLS</a></li>
+      <li>
+        <a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/countries'}"
+           class="text-hover font-semibold text-gray-500 cursor-pointer">EXPERIENCIES</a>
+      </li>
+      <li>
+        <a (click)="closeNav()"  [ngClass]="{'color-third' : router.url == '/trabajos'}" routerLink="/trabajos"
+            class="text-hover font-semibold text-gray-500 cursor-pointer">PROJECTS</a>
+      </li>
+    </ul>
+  </div>
 
 </nav>

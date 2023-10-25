@@ -8,7 +8,8 @@ import {Router} from '@angular/router';
 })
 export class NavbarComponent {
 
-  logo = "../assets/logoAzul.png"
+  logo = "../assets/logo.png"
+  href: string | undefined;
 
   constructor(
     public router: Router,
