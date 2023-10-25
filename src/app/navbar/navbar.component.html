@@ -17,12 +17,18 @@
   </div>
   <div class="hidden w-full lg:block lg:w-auto items-center xl:ml-7" id="navbar-dropdown">
     <ul class="flex flex-col lg:flex-row m-5 gap-7 ">
-      <li><a (click)="closeNav()" class="text-hover font-semibold text-gray-500 cursor-pointer"
-             [ngClass]="{'color-third': href === '#home'}" href="#home">HOME</a></li>
-      <li><a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about'}"
-             class="text-hover font-semibold text-gray-500 cursor-pointer">ABOUT</a></li>
-      <li><a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about-us'}"
-             class="text-hover font-semibold text-gray-500 cursor-pointer">MAIN SKILLS</a></li>
+      <li>
+        <a (click)="closeNav()" class="text-hover font-semibold text-gray-500 cursor-pointer"
+             [ngClass]="{'color-third': href === '#home'}" href="#home">HOME</a>
+      </li>
+      <li>
+        <a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about'}"
+             class="text-hover font-semibold text-gray-500 cursor-pointer">ABOUT</a>
+      </li>
+      <li>
+        <a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/about-us'}"
+             class="text-hover font-semibold text-gray-500 cursor-pointer">MAIN SKILLS</a>
+      </li>
       <li>
         <a (click)="closeNav()" [ngClass]="{'color-third' : router.url == '/countries'}"
            class="text-hover font-semibold text-gray-500 cursor-pointer">EXPERIENCIES</a>
